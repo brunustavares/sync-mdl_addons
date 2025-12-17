@@ -33,7 +33,7 @@
     $plugins = @()
 
     # CLI scripts
-    $plugins += @('admin\cli\cas_CHKSET_srv02.php')
+    # $plugins += @('admin\cli\cas_CHKSET_srv02.php')
     $plugins += @('admin\cli\config_decisao_CLI.php')
     # $plugins += @('admin\cli\get_PEE_data.php')
     $plugins += @('admin\cli\notify_plus.php')
