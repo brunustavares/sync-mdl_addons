@@ -10,7 +10,7 @@
 # @copyright  Copyright (C) 2022-present Bruno Tavares
 # @license    GNU General Public License v3 or later
 #             https://www.gnu.org/licenses/gpl-3.0.html
-# @version    2026031702
+# @version    2026052810
 # @date       2022-08-01
 #
 # This program is free software: you can redistribute it and/or modify
@@ -54,8 +54,8 @@
         # $plugins += @('lib\phpmyfaq')
 
         # assorted
-        $plugins += @('login\change_pwd')
-        $plugins += @('server_time')
+        # $plugins += @('login\change_pwd')
+        # $plugins += @('server_time')
         # $plugins += @('course\get_pee_part.php')
         # $plugins += @('user\get_efolios.php')
 
@@ -147,9 +147,11 @@
     $plugins += @('mod\assign\feedback\poodll')
     $plugins += @('mod\assign\submission\onlinepoodll')
     $plugins += @('mod\board')
+    $plugins += @('mod\checklist')
     $plugins += @('mod\choicegroup')
     $plugins += @('mod\coursecertificate')
     $plugins += @('mod\data\field\poodll')
+    $plugins += @('mod\diary')
     $plugins += @('mod\googlemeet')
     $plugins += @('mod\hotpot')
     $plugins += @('mod\hvp')
@@ -161,6 +163,7 @@
     $plugins += @('mod\vpl')
 
     # plagiarism
+    $plugins += @('plagiarism\originality')
     $plugins += @('plagiarism\turnitin')
     # $plugins += @('plagiarism\urkund')
 
@@ -183,11 +186,12 @@
     $plugins += @('repository\poodll')
 
     # themes
-    $plugins += @('theme\adaptable')
-    $plugins += @('theme\bootstrapbase')
-    $plugins += @('theme\portvv')
-    # $plugins += @('theme\uab_v4')
-    # $plugins += @('theme\uabv3')
+        $plugins += @('theme\adaptable')
+        $plugins += @('theme\boost_union')
+        $plugins += @('theme\bootstrapbase')
+        $plugins += @('theme\portvv')
+        # $plugins += @('theme\uab_v4')
+        # $plugins += @('theme\uabv3')
 
         # favicon
         $plugins += @('theme\boost\pix\favicon.ico')
