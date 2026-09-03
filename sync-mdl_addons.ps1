@@ -10,7 +10,7 @@
 # @copyright  Copyright (C) 2022-present Bruno Tavares
 # @license    GNU General Public License v3 or later
 #             https://www.gnu.org/licenses/gpl-3.0.html
-# @version    2026052810
+# @version    2026082102
 # @date       2022-08-01
 #
 # This program is free software: you can redistribute it and/or modify
@@ -34,6 +34,7 @@
 
     # CLI scripts
     # $plugins += @('admin\cli\cas_CHKSET_srv02.php')
+    $plugins += @('admin\cli\commit_enrollments.php')
     $plugins += @('admin\cli\config_decisao_CLI.php')
     # $plugins += @('admin\cli\get_PEE_data.php')
     $plugins += @('admin\cli\notify_plus.php')
@@ -41,6 +42,7 @@
     # $plugins += @('admin\cli\quiz2urkund.php')
     # $plugins += @('admin\cli\send_parts_list.php')
     # $plugins += @('admin\cli\set_assign_devices.php')
+    $plugins += @('admin\cli\set_GATus.php')
     # $plugins += @('admin\cli\students_notify.php')
     $plugins += @('admin\cli\sync_grds.php')
 
@@ -68,7 +70,7 @@
     $plugins += @('.htaccess')
     $plugins += @('config.php')
     $plugins += @('maintenance.disable')
-    $plugins += @('maintenance.jpg')
+    $plugins += @('maintenance_STE.jpg')
     $plugins += @('policy.php')
     $plugins += @('robots.txt')
     $plugins += @('admin\auth_lib_mdl.php')
@@ -78,7 +80,6 @@
 
     # blocks
     $plugins += @('blocks\absentia')
-    $plugins += @('blocks\chatbot')
     $plugins += @('blocks\completion_progress')
     $plugins += @('blocks\culactivity_stream')
     $plugins += @('blocks\dictionary')
@@ -86,7 +87,8 @@
     $plugins += @('blocks\lanca_pauta')
     # $plugins += @('blocks\popup')
     $plugins += @('blocks\sebenta')
-    $plugins += @('blocks\turnitin')
+    $plugins += @('blocks\sof_ia')
+    # $plugins += @('blocks\turnitin')
     # $plugins += @('blocks\uab_limesurvey')
     $plugins += @('blocks\val_py')
     $plugins += @('blocks\xp')
@@ -158,13 +160,14 @@
     $plugins += @('mod\mindmap')
     $plugins += @('mod\minilesson')
     $plugins += @('mod\pcast')
+    $plugins += @('mod\quiz\report\answersheets')
     $plugins += @('mod\quiz\report\archive')
-    $plugins += @('mod\turnitintooltwo')
+    # $plugins += @('mod\turnitintooltwo')
     $plugins += @('mod\vpl')
 
     # plagiarism
     $plugins += @('plagiarism\originality')
-    $plugins += @('plagiarism\turnitin')
+    # $plugins += @('plagiarism\turnitin')
     # $plugins += @('plagiarism\urkund')
 
     # question
@@ -194,8 +197,11 @@
         # $plugins += @('theme\uabv3')
 
         # favicon
-        $plugins += @('theme\boost\pix\favicon.ico')
+        $plugins += @('theme\boost\pix\favicon_UAb.ico')
         # $plugins += @('theme\boost\pix\favicon.ico_old')
+
+    #docs
+    $plugins += @('admin\cli\00app10+mdl_Tasks.md')
 
 # parâmetros: directorias de origem e destino
 
