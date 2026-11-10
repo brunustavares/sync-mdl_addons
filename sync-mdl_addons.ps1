@@ -10,7 +10,7 @@
 # @copyright  Copyright (C) 2022-present Bruno Tavares
 # @license    GNU General Public License v3 or later
 #             https://www.gnu.org/licenses/gpl-3.0.html
-# @version    2026082102
+# @version    2026111012
 # @date       2022-08-01
 #
 # This program is free software: you can redistribute it and/or modify
@@ -85,6 +85,7 @@
     $plugins += @('blocks\dictionary')
     $plugins += @('blocks\gesturmas')
     $plugins += @('blocks\lanca_pauta')
+    $plugins += @('blocks\lia')
     # $plugins += @('blocks\popup')
     $plugins += @('blocks\sebenta')
     $plugins += @('blocks\sof_ia')
@@ -201,7 +202,8 @@
         # $plugins += @('theme\boost\pix\favicon.ico_old')
 
     #docs
-    $plugins += @('admin\cli\00app10+mdl_Tasks.md')
+        $plugins += @('admin\cli\00app10+mdl_Tasks.md')
+        $plugins += @('plugins.md')
 
 # parâmetros: directorias de origem e destino
 
