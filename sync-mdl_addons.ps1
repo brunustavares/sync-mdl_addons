@@ -10,7 +10,7 @@
 # @copyright  Copyright (C) 2022-present Bruno Tavares
 # @license    GNU General Public License v3 or later
 #             https://www.gnu.org/licenses/gpl-3.0.html
-# @version    2026111012
+# @version    2026112512
 # @date       2022-08-01
 #
 # This program is free software: you can redistribute it and/or modify
@@ -45,6 +45,7 @@
     $plugins += @('admin\cli\set_GATus.php')
     # $plugins += @('admin\cli\students_notify.php')
     $plugins += @('admin\cli\sync_grds.php')
+    $plugins += @('admin\cli\update_enrol.php')
 
     # tools
         # admin
@@ -167,9 +168,10 @@
     $plugins += @('mod\vpl')
 
     # plagiarism
-    $plugins += @('plagiarism\originality')
+    # $plugins += @('plagiarism\originality')
     # $plugins += @('plagiarism\turnitin')
     # $plugins += @('plagiarism\urkund')
+    $plugins += @('plagiarism\uniwise')
 
     # question
         # behaviour
